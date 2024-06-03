@@ -1,4 +1,4 @@
-#This is our main driver file. It will be responsible for handling user input and displaying the current GameState object.
+#main driver file. responsible for handling user input and displaying the current GameState object.
 
 import ChessEngine
 import pygame as p
@@ -10,17 +10,17 @@ SQ_SIZE = HEIGHT // DIMENSION
 MAX_FPS = 15
 IMAGES = {}
 
-#Initialize a global dictionary of images. This will be called exactly once in the main
+#initialize a global dictionary of images
 
 def loadImages():
    
     pieces = ['wp', 'wR', 'wN', 'wB', 'wK', 'wQ', 'bB', 'bN', 'bQ', 'bK', 'bp', 'bR']
     for piece in pieces:
         IMAGES[piece] = p.transform.scale(p.image.load("C:\\Users\\brend\\Desktop\\Programs!\\Chess\\Chess\\Chess\\images\\" + piece + ".png"), (SQ_SIZE, SQ_SIZE))
-    #Note: we can access an image by saying 'IMAGES['wp']'
+    #access an image by saying 'IMAGES['wp']'
 
 
- #The main driver for code. This will handle user input and updating the graphics.
+# handles user input and updating the graphics.
 
 def main():
      p.init()
@@ -30,8 +30,8 @@ def main():
      gs = ChessEngine.GameState()
      loadImages() 
      running = True
-     sqSelected = () #no square selected initially, keeping track of the last click of the user
-     playerClicks = [] #keep track of player clicks
+     sqSelected = () #keeping track of the last click of the user
+     playerClicks = [] #keep track of clicks
      while running: 
          for e in p.event.get():
              if e.type == p.QUIT:
@@ -56,7 +56,7 @@ def main():
          clock.tick(MAX_FPS)
          p.display.flip()
 
-#Responsible for all graphics
+#responsible for graphics
 def drawGameState(screen, gs):
     drawBoard(screen) #draw squares on board
     drawPieces(screen, gs.board) #draw pieces on top of squares
