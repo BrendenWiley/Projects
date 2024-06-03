@@ -1,3 +1,5 @@
 ![alt text](image.png)
 
-Also has the capability to draw NEXRAD data from the past
+Has the capability to draw current and past NEXRAD data from any station
+
+![alt text](image-1.png)
