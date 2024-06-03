@@ -1,5 +1,4 @@
-#this class is responsible for storing all the information about the current state of a chess game. it will also be
-#responsible for determining the valid moves of the current state. it will also keep a move log.
+#this class is responsible for storing all the information about the current state of a chess game. does NOT check if a move is valid before moving a piece.
 
 class GameState():
     def __init__(self):
