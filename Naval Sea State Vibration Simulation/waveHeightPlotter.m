@@ -1,5 +1,5 @@
 % Define the filename
-filename = "waveheight.txt";
+filename = "waveheightData.txt";
 
 % Read the data from the file
 data = dlmread(filename);

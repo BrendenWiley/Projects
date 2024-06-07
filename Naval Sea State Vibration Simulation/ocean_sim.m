@@ -252,7 +252,7 @@ disp(['Wave height at (', num2str(x), ',', num2str(y), ') at time ', num2str(tim
 
 % Save pitch, roll, yaw and waveheight to file
     B = wave_height;
-    fileID = fopen('waveheight.txt', 'a');
+    fileID = fopen('waveheightData.txt', 'a');
     fprintf(fileID, '%2.5f\n', B);
     fclose(fileID);
 
@@ -507,7 +507,7 @@ function [pitch, roll, yaw] = calculate_angles(x, y, time, param)
 
     % Save pitch, roll, yaw and waveheight to file
     A = [pitch; roll; yaw];
-    fileID = fopen('value.txt', 'a');
+    fileID = fopen('vibrationData.txt', 'a');
     fprintf(fileID, '%2.2f %2.2f %2.2f\n', A);
     fclose(fileID);
 end

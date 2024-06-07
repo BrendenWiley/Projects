@@ -1,5 +1,5 @@
 % Define the filename
-filename = "value.txt";
+filename = "vibrationData.txt";
 % Read the data from the file
 data = dlmread(filename);
 
