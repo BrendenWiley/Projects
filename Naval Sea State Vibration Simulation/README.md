@@ -9,3 +9,4 @@ The simulated vibration is fed into a PID control scheme to estimate angular mot
 This loop drives a stablization algorithm for an X band radar mounted antenna.
 
 ![alt text](PIDSchematic.png)
+![alt text](AngularMotorSpeed.png)
