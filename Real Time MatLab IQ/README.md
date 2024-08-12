@@ -5,3 +5,5 @@ Plots horizontal (H) and vertical (V) data from a dual pol scan, given an input 
 Conducts H and V pulse integration (100 pulses), dB calculation, and fft to velocity
 
 ![alt text](image.png)
+
+Scan result of weather phenomena taken atop of ARRC center at the University of Oklahoma.
